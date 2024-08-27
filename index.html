@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="imagenes/logo.png" alt="Logo Alura" class="logo">
+        <p class="titulo">Encriptador Ary v.</p>
+    </header>
+
+    
+    <main class="contenido">
+        <section>
+            <textarea class="area__texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <p class="instruccion">
+            <strong> 🗣️ </strong> Solo introducir letras minúsculas y sin acentos
+            </p>
+            <div class="botones">
+                <button class="boton__encriptar" onclick="botonEncriptar()" > Encriptar✨ </button>
+                <button class="boton__desencriptar" onclick="botonDesencriptar()"> Desencriptar✨ </button>
+            </div>
+        </section>
+
+        <section>
+            <textarea class="area_texto_resultado" cols="20" rows="10"></textarea>
+            <div>
+                <button class="boton__copiar" onclick="botonCopiar()"> Copiar✨ </button>
+            </div>
+        </section>
+    </main>
+
+    <footer> 
+        Creado por Ariadna Lorenzana, agosto 2024
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

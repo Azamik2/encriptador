@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #D2E0FB;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 25px;
+}
+
+body{
+    height: 100%;
+}
+
+.logo{
+    padding-top: 15px;
+    margin-left: 10px;
+    width: 10%;
+}
+
+header{
+    display: flex;
+}
+
+.titulo{
+    margin-top: 23px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 0;
+    color: #8EACCD;
+}
+
+.contenido{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+textarea{
+    border: none;
+    color: white;
+    margin-top: 50px;
+    text-transform: lowercase;
+}
+
+::placeholder{
+    color: white;
+}
+
+.area__texto:focus{
+    outline: none;
+}
+
+.area__texto{
+    height: 500px;
+    width: 600px;
+    margin-top: 10px;
+    padding: 10px 10px;
+    color: white;
+    display: flex;
+    justify-content: right;
+}
+
+.area_texto_resultado{
+    color: #8EACCD;
+    background: white;
+    background-image: url("imagenes/gato_sofa.png");
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 32px;
+    margin-top: 10px;
+    margin-left: 300px;
+    padding: 10px 10px;
+    width: 300px;
+    height: 500px;
+    display: flex;
+}
+
+.area_texto_resultado:focus{
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+
+.boton__encriptar{
+    color: black;
+    background: #D7E5CA;
+    border-radius: 24px;
+    cursor: pointer;
+    height: 67px;
+    margin-right: 30px;
+    width: 250px;
+    border-color: aliceblue;
+}
+
+.boton__desencriptar{
+    color: black;
+    border-radius: 24px;
+    height: 67px;
+    cursor: pointer;
+    width: 250px;
+    background-color: #F9F3CC;
+    border-color: aliceblue;
+}
+
+.boton__copiar{
+    color: black;
+    border-radius: 24px;
+    cursor: pointer;
+    height: 67px;
+    width: 200px;
+    position: absolute;
+    margin-top: 68px;
+    margin-left: 60%;
+    background-color: rgb(242, 230, 251);
+    border-color: aliceblue;
+    position: static;
+}
+
+.instruccion{
+    margin-top: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    font-size: medium;
+}
+
+strong{
+    size: 30px;
+}
+
+footer{
+    color: white;
+    background-color: rgb(196, 214, 243);
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    width: 100%;
+    position: static;
+    bottom: 0;
+}
+
+.mensaje{
+    color: white;
+}
+
+.boton__encriptar:hover{
+    font-size: 30px;
+}
+
+.boton__desencriptar:hover{
+    font-size: 30px;
+}
+
+.boton__copiar:hover{
+    font-size: 30px;
+}
+
+@media (min-width: 501px) and (max-width: 1100px){
+    .contenido{
+        flex-direction: column;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    footer{
+        margin-bottom: 0;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .area_texto_resultado{
+        margin-top: 40px;
+        justify-content: left;
+        width: 700px;
+        margin-left: 0;
+    }
+
+    .boton__copiar{
+        margin-top: 40px;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .area__texto{
+        margin-top: 40px;
+        width: 700px;
+        margin-left: 0;
+    }
+
+}
+
+@media (max-width: 500px){
+    .contenido{
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .area__texto{
+        margin-top: 20px;
+        width: auto;
+    }
+
+    .area_texto_resultado{
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .boton__copiar{
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .botones{
+        flex-direction: column;
+    }
+
+    footer{
+        padding: 20px;
+    }
+}
